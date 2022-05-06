@@ -14,5 +14,10 @@ public class JavaKongZhiFu2 {
                     java语句
             }
         */
+        int a = 80;
+        switch (a){
+            case 80:
+
+        }
     }
 }
