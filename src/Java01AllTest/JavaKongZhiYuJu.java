@@ -1,4 +1,4 @@
-
+package Java01AllTest;
 
 public class JavaKongZhiYuJu {
     public static void main(String[] args){

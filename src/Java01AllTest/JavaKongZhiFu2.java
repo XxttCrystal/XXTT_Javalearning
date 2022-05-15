@@ -1,3 +1,5 @@
+package Java01AllTest;
+
 public class JavaKongZhiFu2 {
     public static void main(String[] args){
         //本程序讲解switch

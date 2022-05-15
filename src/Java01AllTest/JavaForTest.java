@@ -1,3 +1,7 @@
+package Java01AllTest;
+
+import javax.swing.*;
+
 public class JavaForTest {
     public static void main(String[] args){
         /*
@@ -88,7 +92,7 @@ public class JavaForTest {
         }
         //另一种写法
         w = 0;//先归0
-        for ( int l = 1 ; l <= 100 ; l ++ ){
+        for ( int l = 1 ; l <= 10 ; l ++ ){
             if ( l % 2 != 0){
                 w += l;
                 System.out.println( "w数值:" + w );//这个代码和上一个效果一样，但是这个看起来更好？反正一定要把思维开阔
@@ -109,6 +113,42 @@ public class JavaForTest {
              假设到第二圈你可以调用这个数，以制作类似乘法表的程序
              TODO:制作乘法表程序
             */
+
         }
+/*        int shu = 10;
+        boolean isSuShu = true;//默认值
+        for ( int beiCu = 2 ; beiCu < shu ; beiCu ++){
+            if ( shu % beiCu != 0){
+                isSuShu = false;
+            }
+        }
+        System.out.println( isSuShu ?  shu + "是素数" : shu + "不是素数");*/
+/*        for ( int i = 2 ; i <= 100 ; i ++){
+            boolean isSuShu = true;
+                //i: 2 3 4 5 6 7 .. 99
+            panDuan:for ( int z = 2 ; z < 100 ; z ++ ){
+                //beiChu: 2 3 4 5 6 7 ...  99
+                if ( i % z != 0 ){
+                    isSuShu = false;
+                    System.out.print(z);
+                    break;
+                }
+            }
+            System.out.print( isSuShu ? i : "|" );
+        }*/
+        int time = 0;
+        int rongLiang = 99999;
+        for( int i = 2 ; i <= rongLiang ; i ++ ){
+            boolean isZ = true;
+            for( int p = 2 ; p < i ; p ++ ){
+                if ( i % p == 0 ){
+                    isZ = false;
+                    break;
+                }
+            }
+            time += isZ ? 1 : 0;
+        }
+        int rongLiang2 = rongLiang - 1;
+        System.out.println( "在" + rongLiang2 + "个数内有" + time + "个素数");
     }
 }

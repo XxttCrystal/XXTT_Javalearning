@@ -1,3 +1,5 @@
+package Java01AllTest;
+
 public class ShuJuLeiXingCeShi2 {
     public static void main(String[] srgs){
 /*

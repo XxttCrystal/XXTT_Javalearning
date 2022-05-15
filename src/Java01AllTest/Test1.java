@@ -1,4 +1,6 @@
-import sun.security.mscapi.CPublicKey;
+package Java01AllTest;
+
+
 
 public class Test1 {
     public static void main(String[] args){
