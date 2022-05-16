@@ -7,6 +7,6 @@ public class JavaStackTest01 {
     private int[] stack;
     private final int top = -1;
     public JavaStackTest01(int maxStack){
-        this.maxStack = maxStack;
+        this.maxStack = maxStack;//这个maxStack = 上文类中引用的maxStack
     }
 }

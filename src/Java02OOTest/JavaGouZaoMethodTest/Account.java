@@ -27,6 +27,9 @@ public class Account {
      * */
     public void setAccount(String account) {
         this.account = account;
+        //这个account是上面的account，this的运用
+        //什么是this?this就是当前对象
+        System.out.println("账户" + this.account + "已初始化！");
     }
     /**
      * 余额的get方法
@@ -50,7 +53,7 @@ public class Account {
      * */
     public Account() {
         account = "游客账户";
-        //yuE = 0.0f;自动初始化
+        this.yuE = 100.0f;
         //当自动赋值的时候是在构造方法执行过程当中构造的，不是在类加载，那时候还没创建对象
         //javadoc注释写在对应代码上方
     }
