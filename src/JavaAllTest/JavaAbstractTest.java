@@ -28,6 +28,7 @@ public class JavaAbstractTest {
         p.setName("XXKK");
         p.setWorkAge(6);
         p.setXinShui(8000.0);
+        p.setLevel(4);
         p.PrintInfo();
         //工人XXKK
     }
